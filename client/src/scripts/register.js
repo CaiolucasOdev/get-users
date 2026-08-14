@@ -1,6 +1,8 @@
 const email = document.querySelector('input[type="email"]');
 const password = document.querySelector('input[type="password"]');
 const button = document.querySelector('button');
+const checkbox = document.querySelector('input[type="checkbox"]')
+const labelPassword = document.querySelector('#placa')
 
 
 button.addEventListener('click',(event) => { 
@@ -25,5 +27,19 @@ button.addEventListener('click',(event) => {
 
    
 
+
+})
+
+checkbox.addEventListener('change', () => {
+    const AttributeValue = password.getAttribute('type')
+            if (AttributeValue === 'password') {
+            password.setAttribute('type', 'text');
+            labelPassword.textContent = 'Ocultar senha'
+            return
+        }
+
+
+    password.setAttribute('type', 'password');
+    labelPassword.textContent = 'Mostrar senha'
 
 })
