@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+    <link rel="stylesheet" href="../style/recovery.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recovery</title>
 </head>
 <body>
+    <main>
     <h1>Recuperar senha</h1>
 
     <form>
@@ -15,11 +17,15 @@
         <input type="password" name="nova senha" id="new-password">
         <label for="confirme nova senha">Confirme nova senha*</label>
         <input type="password" name="Confirme" id="confirm-new-password">
-        <label for="mostrar" id="placa">Mostrar senha</label>
+        
+        <span class="check"><label for="mostrar" id="placa">Mostrar senha</label>
         <input type="checkbox" name="mostrar" id="" />
+        </span>
         <button>Recuperar</button>
         <p>Não possui cadastro?Registre-se <a href="register.html">aqui</a>!</p>
     </form>
+
+    </main>
 
     <script src="../scripts/recovery.js"></script>
     
