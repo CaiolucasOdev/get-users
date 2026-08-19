@@ -1,0 +1,26 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+    background-color: blueviolet;
+    
+}
+
+main {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+ main button {
+    
+    height: 40px;
+    width: 100px;
+    background-color:rgb(11, 10, 12);
+    color: rgb(228, 220, 220);
+    border-radius: 10px;
+
+}
